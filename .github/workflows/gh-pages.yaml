@@ -1,23 +1,55 @@
-name: Deploy Flutter Web to GitHub Pages
+name: Deploy Jaspr Web to GitHub Pages
 
 on:
   push:
     branches:
-      - main # or 'master'
+      - main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - uses: subosito/flutter-action@v2
+      - name: Setup Dart
+        uses: dart-lang/setup-dart@v1.3
+
+      - name: Install Jaspr CLI
+        run: dart pub global activate jaspr_cli
+
+      - name: Install dependencies
+        run: dart pub get
+
+      - name: Build Jaspr
+        run: jaspr build --verbose --base-url /hayat_portfolio/
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
         with:
-          flutter-version: stable
+          path: "build/jaspr" # jaspr puts its web output here
 
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
       - name: Deploy to GitHub Pages
-        uses: bluefireteam/flutter-gh-pages@v8
-        with:
-          baseHref: /dot_guide_pano/
-          webRenderer: canvaskit
+        id: deployment
+        uses: actions/deploy-pages@v2
