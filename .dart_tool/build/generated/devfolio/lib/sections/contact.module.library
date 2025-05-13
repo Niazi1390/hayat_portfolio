@@ -1,0 +1,1 @@
+{"isEntrypoint":true,"deps":["devfolio|lib/components/contact.dart","devfolio|lib/models/contact.dart","jaspr|lib/jaspr.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[],"hasMain":false}

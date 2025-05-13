@@ -1,0 +1,1 @@
+{"isEntrypoint":true,"deps":["devfolio|lib/components/app_button.dart","devfolio|lib/constants/theme.dart","devfolio|lib/models/about.dart","devfolio|lib/models/basic.dart","devfolio|lib/utils/assets.dart","jaspr|lib/jaspr.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[],"hasMain":false}

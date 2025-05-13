@@ -1,0 +1,1 @@
+{"isEntrypoint":true,"deps":["devfolio|lib/constants/theme.dart","jaspr|lib/server.dart","devfolio|lib/app.dart","devfolio|lib/jaspr_options.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[],"hasMain":true}

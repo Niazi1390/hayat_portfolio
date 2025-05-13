@@ -1,0 +1,1 @@
+{"isEntrypoint":true,"deps":["freezed_annotation|lib/freezed_annotation.dart"],"parts":["devfolio|lib/models/project.freezed.dart","devfolio|lib/models/project.g.dart"],"conditionalDeps":[],"sdkDeps":[],"hasMain":false}

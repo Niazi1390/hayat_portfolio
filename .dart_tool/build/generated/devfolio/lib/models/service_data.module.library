@@ -1,0 +1,1 @@
+{"isEntrypoint":true,"deps":["freezed_annotation|lib/freezed_annotation.dart"],"parts":["devfolio|lib/models/service_data.freezed.dart","devfolio|lib/models/service_data.g.dart"],"conditionalDeps":[],"sdkDeps":[],"hasMain":false}

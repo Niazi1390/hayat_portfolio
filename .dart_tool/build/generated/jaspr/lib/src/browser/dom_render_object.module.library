@@ -1,0 +1,1 @@
+{"isEntrypoint":false,"deps":["jaspr|lib/src/foundation/constants.dart","jaspr|lib/src/foundation/events/events.dart","jaspr|lib/src/framework/framework.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":["async","html"],"hasMain":false}

@@ -1,0 +1,1 @@
+{"isEntrypoint":true,"deps":["jaspr|lib/browser.dart","devfolio|lib/sections/about_me.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[],"hasMain":true}
