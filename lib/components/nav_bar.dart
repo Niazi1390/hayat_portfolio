@@ -11,7 +11,7 @@ class NavBar extends StatelessComponent {
     yield section(classes: 'navbar', [
       div([
         span([text('< ')]),
-        span(classes: 'brand', [text('Hamza')]),
+        span(classes: 'brand', [text('Hayat')]),
         span([text(' />')]),
       ]),
       div(classes: 'labels', [
@@ -51,10 +51,9 @@ class NavBar extends StatelessComponent {
           ],
         ),
         AppButton(
-          label: 'RESUME',
-          href:
-              "https://drive.google.com/drive/u/0/folders/1E6NxJlmnW2lTYTszcbODdpXiPFYe_kBM",
-        ),
+            label: 'RESUME',
+            href:
+                "https://drive.google.com/file/d/1oKt8ylzRL1RAoLj1Oz49tk8Tl_V0Bpld/view?usp=drivesdk"),
       ]),
     ]);
   }
